@@ -1,0 +1,14 @@
+{
+  "apps": {
+    "org.onosproject.edgestacknode": {
+      "edgestackApiConfig": {
+        "mepmIpAddress": "60.30.162.62",
+	"edgestackIpAddress": "60.30.131.107",
+        "mepmAuthId": "6176B016937E8D69219BB2B49873AB8B",
+        "mepmAuthPassword": "9BE446B0EA73AA46BE8271129C8A681C",
+        "omaHostId": "HOST9875-fe86-43a2-a96c-4152669c4239",
+        "omaBridgeName": "br-int"
+      }
+    }
+  }
+}

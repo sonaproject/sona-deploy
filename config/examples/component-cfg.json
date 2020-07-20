@@ -1,0 +1,5 @@
+{
+  "org.onosproject.edgestacknode.impl.DefaultEdgestackNodeHandler": {
+    "ovsdbPortNum": 6650
+  }
+}
