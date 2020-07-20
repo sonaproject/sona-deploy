@@ -1,6 +1,6 @@
-# EdgeStack deployer using docker-compose.
+# SONA deployer using docker-compose.
 
-This is project is intended for auto-deploying EdgeStack using docker-compose. The underlying idea of this project is to ease the deployment process of EdgeStack in a light-weight manner. Ubuntu 18.04 is recommended, but it also works on CentOS 7 distribution.
+This is project is intended for auto-deploying SONA using docker-compose. The underlying idea of this project is to ease the deployment process of SONA in a light-weight manner. Ubuntu 18.04 is recommended, but it also works on CentOS 7 distribution.
 
 ## Requirements
 - Operating System
@@ -26,16 +26,7 @@ This is project is intended for auto-deploying EdgeStack using docker-compose. T
 
 ```$ sudo chmod +x /usr/local/bin/docker-compose```
 
-### Upload EdgeStack docker image
-```
-$ docker load -i edgestack.tar
-
-$ docker images
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-edgestack           latest              100425b3c644        4 hours ago         438MB
-```
-
-### Deploy EdgeStack
+### Deploy SONA
 ```
 $ make start
 docker-compose up -d
@@ -43,7 +34,7 @@ Creating network "edgestack-deploy_default" with the default driver
 Creating edgestack-deploy_edgestack_1 ... done
 ```
 
-### Terminate EdgeStack
+### Terminate SONA
 ```
 $ make stop
 docker-compose down -t0
@@ -52,7 +43,7 @@ Removing edgestack-deploy_edgestack_1 ... done
 Removing network edgestack-deploy_default
 ```
 
-### Access EdgeStack Shell
+### Access SONA Shell
 ```
 $ make cli
 ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -p 8101 karaf@localhost
@@ -62,7 +53,7 @@ Password:
 Welcome to EdgeStack!
 ```
 
-### Print out EdgeStack log
+### Print out SONA log
 ```
 $ make log
 docker-compose logs -f edgestack
